@@ -1,0 +1,95 @@
+
+
+.sub-links {
+    display: none;
+}
+
+.side {
+    padding: 5px;
+}
+
+.nav, .sub-menu {
+    display: none;
+}
+
+.sub-btn:hover .sub-links {
+    display: none;
+}   
+
+.norms {
+    position: relative;
+    top: 10px;
+    right: 30px;
+}
+
+.norms .loki {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.norms .logout {
+    position: absolute;
+    top: 1px;
+    right: -7px;
+    padding: 0px 1px;
+    background: #fff;
+    width: 200px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0,1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.norms .logout.active {
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.norms .logout::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+.norms .logout ul li
+{
+    list-style: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+.norms .logout ul li img
+{
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.norms .logout ul li:hover img
+{
+    opacity: 1;
+}
+.norms .logout ul li a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.norms .logout ul li:hover a
+{
+    color: maroon;
+}
+
