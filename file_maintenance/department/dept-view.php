@@ -28,10 +28,10 @@ require 'dbcon.php';
                     <div class="card-body">
 
                         <?php
-                        if(isset($_GET['dept_id']))
+                        if(isset($_GET['department_id']))
                         {
-                            $dept_id = mysqli_real_escape_string($conn, $_GET['dept_id']);
-                            $query = "SELECT * FROM department WHERE dept_id='$dept_id' ";
+                            $department_id = mysqli_real_escape_string($conn, $_GET['department_id']);
+                            $query = "SELECT * FROM department WHERE department_id='$department_id' ";
                             $query_run = mysqli_query($conn, $query);
 
                             if(mysqli_num_rows($query_run) > 0)

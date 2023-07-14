@@ -32,10 +32,10 @@ require 'dbcon.php';
                     <div class="card-body">
 
                         <?php
-                        if(isset($_GET['dept_id']))
+                        if(isset($_GET['department_id']))
                         {
-                            $dept_id = mysqli_real_escape_string($conn, $_GET['dept_id']);
-                            $query = "SELECT * FROM department WHERE dept_id='$dept_id' ";
+                            $department_id = mysqli_real_escape_string($conn, $_GET['department_id']);
+                            $query = "SELECT * FROM department WHERE department_id='$department_id' ";
                             $query_run = mysqli_query($conn, $query);
 
                             if(mysqli_num_rows($query_run) > 0)
@@ -43,7 +43,7 @@ require 'dbcon.php';
                                 $student = mysqli_fetch_array($query_run);
                                 ?>
                                 <form action="department.php" method="POST">
-                                    <input type="hidden" name="dept_id" value="<?= $student['dept_id']; ?>">
+                                    <input type="hidden" name="department_id" value="<?= $student['department_id']; ?>">
 
                                     <div class="mb-3">
                                         <label>DEPTCODE</label>

@@ -23,7 +23,7 @@ if(isset($_POST['delete_student']))
 
 if(isset($_REQUEST['update_student']))
 {
-    $dept_id = mysqli_real_escape_string($conn, $_REQUEST['dept_id']);
+    $department_id = mysqli_real_escape_string($conn, $_REQUEST['department_id']);
     $deptcode = mysqli_real_escape_string($conn, $_REQUEST['deptcode']);
     $deptname = mysqli_real_escape_string($conn, $_REQUEST['deptname']);
     $depthead = mysqli_real_escape_string($conn, $_REQUEST['depthead']);
@@ -31,7 +31,7 @@ if(isset($_REQUEST['update_student']))
 
 
     $query = "UPDATE department SET deptcode='$deptcode', deptname='$deptname', deptgroup='$deptgroup' 
-    WHERE dept_id='$dept_id' ";
+    WHERE department_id='$department_id' ";
     $query_run = mysqli_query($conn, $query);
 
     if (mysqli_query($conn, $query)){

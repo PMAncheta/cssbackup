@@ -30,7 +30,7 @@
       <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Philippine_Military_Academy_%28PMA%29.svg/1200px-Philippine_Military_Academy_%28PMA%29.svg.png">
    </div>
 
-   <form action="insert1.php" method="post">
+   <form action="insert.php" method="post">
       <h3>Register Now</h3>
       <?php
       if(!empty($error)){

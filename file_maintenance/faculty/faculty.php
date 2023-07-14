@@ -18,15 +18,14 @@ if(!isset($_SESSION['user_name'])){
     
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/style5.css">
 
     <!----===== Iconscout CSS ===== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">    
     <title>CIS Admin Dashboard</title>
 </head>
 <body>
-    <nav>
+<nav>
         <div class="logo-name">
             <div class="logo-image">
                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Philippine_Military_Academy_%28PMA%29.svg/1200px-Philippine_Military_Academy_%28PMA%29.svg.png" alt="">
@@ -35,138 +34,39 @@ if(!isset($_SESSION['user_name'])){
             <span class="logo_name">CIS</span>
         </div>
 
-    <div class="side">
-        <div class="menu-items">
-            <div class="nav-links">
-                <a href="/loginv1ghub/user_panel.php">
-                    <i class="uil uil-estate"></i>
-                    <span class="link-name">Dashboard</span>
-                </a>
-            </div>
-            
-            <div class="nav-links">
-                <a class="sub-btn">
+        <div class="sue">
+            <ul>
+                <li class="main-link">
+                    <a href="/cssbackup/user_panel.php" class="link-text">
+                        <i class="uil uil-estate"></i>Dashboard</a>
+                </li>
+                <li class="main-link">
                     <i class="uil uil-folder"></i>
                     File Maintenance
-                    <i class="uil uil-angle-right dropdown"></i>
-                </a>
-                <div class="sub-menu">
-                    <li>
-                        <a href="cadet.html" class="link-name">Cadet</a>
-                        <a href="/loginv1ghub/file_maintenance/faculty/faculty.php" class="link-name">Faculty</a>
-                        <a href="/loginv1ghub/file_maintenance/department/department.php" class="link-name">Department</a>
-                        <a href="/loginv1ghub/file_maintenance/course/course.php" class="link-name">Courses</a>
-                    </li>
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a class="sub-btn">
-                    <i class="uil uil-process"></i>
-                    Initial Term Processing
-                    <i class="uil uil-angle-right dropdown"></i>
-                </a>
-                <div class="sub-menu">
-                    <div class="nav-links">
-                        <a class="sub-btn">
-                            <i class="uil uil-gear">
-                                Term Settings
-                            </i>
-                            <i class="uil uil-angle-right dropdown"></i>
-                        </a>
-                        <div class="sub-menu">
-                            <li>
-                                <a href="cadet.html" class="link-name">ACAD</a>
-                                <a href="faculty.html" class="link-name">Tactics</a>
-                                <a href="department.html" class="link-name">Conduct</a>
-                                <a href="courses.html" class="link-name">Aptitude</a>
-                            </li>
-                        </div>
-                    </div>
-                    <li>
-                        <a href="#" class="link-name">Course Offerings</a>
-                        <a href="#" class="link-name">Sectioning</a>
-                    </li>
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a class="sub-btn">
-                    <i class="uil uil-folder"></i>
-                    Term Processing
-                    <i class="uil uil-angle-right dropdown"></i>
-                </a>
-                <div class="sub-menu">
-                    <li>
-                        <a href="faculty.html" class="link-name">ACAD Grades Entry</a>
-                        <a href="department.html" class="link-name">Conduct</a>
-                        <a href="courses.html" class="link-name">Aptitude</a>
-                        <a href="courses.html" class="link-name">SPDO</a>
-                        <a href="courses.html" class="link-name">Report</a>
-                        <a href="cadet.html" class="link-name">Scheduling</a>
-                    </li>
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a class="sub-btn">
-                    <i class="uil uil-folder"></i>
-                    Evaluation
-                    <i class="uil uil-angle-right dropdown"></i>
-                </a>
-                <div class="sub-menu">
-                    <li>
-                        <a href="faculty.html" class="link-name">Course</a>
-                        <a href="cadet.html" class="link-name">Faculty</a>
-                    </li>
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a class="sub-btn">
-                    <i class="uil uil-process"></i>
-                    End Term Processing
-                    <i class="uil uil-angle-right dropdown"></i>
-                </a>
-                <div class="sub-menu">
-                    <a href="#" class="link-name">Reports</a>
-                    <div class="nav-links">
-                        <a class="sub-btn">
-                            <i class="uil uil-gear">
-                                Awards
-                            </i>
-                            <i class="uil uil-angle-right dropdown"></i>
-                        </a>
-                    
-                        <div class="sub-menu">
-                            <li>
-                                <a href="faculty.html" class="link-name">Comm's List</a>
-                                <a href="cadet.html" class="link-name">Dean's List</a>
-                            </li>
-                        </div>
-                        <div class="">
-                            <a class="sub-btn">
-                                <i class="uil uil-gear">
-                                    Graduation Reports
-                                </i>
-                                <i class="uil uil-angle-right dropdown"></i>
-                            </a>
-                        
-                            <div class="sub-menu">
-                                <li>
-                                    <a href="faculty.html" class="link-name">Latin Awards</a>
-                                    <a href="cadet.html" class="link-name">Awards</a>
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                
-            
-            
+                    <i class="uil uil-arrow-right rotate"></i>
+                    <ul class="sublink"></li>
+                        <li><a href="file_maintenance/cadets/cadets.php">Cadets</a></li>
+                        <li><a href="file_maintenance/department/department.php">Department</a></li>
+                        <li><a href="/cssbackup/file_maintenance/faculty/faculty.php">Faculty</a></li>
+                        <li><a href="file_maintenance/course/course.php">Course</a></li>
+                    </ul>
+                </li>
+                <li class="main-link">
+                    <i class="uil uil-facebook"></i>
+                    Main Link 2
+                    <ul class="sublink">
+                        <li>Sublink 1
+                            <ul class="subbuttonlink">
+                                <li>Subbuttonlink 1</li>
+                                <li>Subbuttonlink 2</li>
+                                <li>Subbuttonlink 3</li>
+                            </ul>
+                        </li>
+                        <li>Sublink 2</li>
+                        <li>Sublink 3</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -281,7 +181,7 @@ if(!isset($_SESSION['user_name'])){
                                         <td><?= $faculty['ranks']; ?></td>
                                         <td><?= $faculty['brofserv']; ?></td>
                                         <td><?= $faculty['status']; ?></td>
-                                        <td><?= $faculty['pix']; ?></td>
+                                        <td><img src="<?php echo asset('uploads/profile/' . $faculty->pix); ?>" alt="image"></td>
                                         <td><?= $faculty['uname']; ?></td>
                                         <td><?= $faculty['pwd']; ?></td>
                                         <td><?= $faculty['lvl']; ?></td>
@@ -321,7 +221,5 @@ if(!isset($_SESSION['user_name'])){
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="navbar.js"></script>
-    <script src="onclick.js"></script>
 </body>
 </html>

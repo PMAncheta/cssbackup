@@ -37,7 +37,7 @@ require 'dbcon.php';
 
                             <div class="mb-3">
                                 <label>DEPTCODE</label>
-                                <input type="text" name="deptcode" id="deptcode" class="form-control">
+                                <input type="text" name="deptcode" id="deptcode" class="form-control" style="text-transform: uppercase;">
                             </div>
                            
                             <div class="mb-3">

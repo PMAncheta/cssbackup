@@ -19,36 +19,9 @@ if(!isset($_SESSION['user_name'])){
     
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/style4.css">
-
+    
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-
-    <style>
-        .sue {
-            padding: 30px 40px;
-        }
-        .sublink {
-            margin-left: 10px;
-            list-style-type: none;
-            display: none; /* Hide sublinks by default */
-        }
-        .subbuttonlink {
-            margin-left: 20px;
-            list-style-type: none;
-            display: none; /* Hide subbuttonlinks by default */
-        }
-        .main-link {
-            cursor: pointer; /* Change cursor to pointer on main links */
-        }
-        .show-sublinks .sublink {
-            display: block; /* Show sublinks when the class is present */
-        }
-        .show-subbuttonlinks .subbuttonlink {
-            display: block; /* Show subbuttonlinks when the class is present */
-        }
-    </style>
 
     <title>CIS Admin Dashboard</title>
 </head>
@@ -64,14 +37,24 @@ if(!isset($_SESSION['user_name'])){
 
         <div class="sue">
             <ul>
-                <li class="main-link">Dashboard</li>
-                <li class="main-link">Main Link 1
+                <li class="main-link">
+                    <a href="user_panel.php" class="link-text">
+                        <i class="uil uil-estate"></i>Dashboard</a>
+                </li>
+                <li class="main-link">
+                    <i class="uil uil-folder"></i>
+                    File Maintenance
+                    <i class="uil uil-arrow-right rotate"></i>
                     <ul class="sublink"></li>
-                        <li>Sublink 2</li>
-                        <li>Sublink 3</li>
+                        <li><a href="file_maintenance/cadets/cadets.php">Cadets</a></li>
+                        <li><a href="file_maintenance/department/department.php">Department</a></li>
+                        <li><a href="file_maintenance/faculty/faculty.php">Faculty</a></li>
+                        <li><a href="file_maintenance/course/course.php">Course</a></li>
                     </ul>
                 </li>
-                <li class="main-link">Main Link 2
+                <li class="main-link">
+                    <i class="uil uil-facebook"></i>
+                    Main Link 2
                     <ul class="sublink">
                         <li>Sublink 1
                             <ul class="subbuttonlink">
@@ -85,9 +68,6 @@ if(!isset($_SESSION['user_name'])){
                     </ul>
                 </li>
             </ul>
-                
-            
-            
         </div>
     </nav>
 
@@ -152,42 +132,6 @@ if(!isset($_SESSION['user_name'])){
             </div>
         </div>
     </section>
-
-    <script>
-        // JavaScript code to toggle visibility of sublinks and subbuttonlinks
-        document.addEventListener('DOMContentLoaded', function() {
-            var sublinks = document.querySelectorAll('.sublink');
-
-            // Add click event listener to each sublink
-            sublinks.forEach(function(sublink) {
-                sublink.addEventListener('click', function(event) {
-                    event.stopPropagation(); // Prevent click event from propagating to parent elements
-
-                    // Toggle the class "show-subbuttonlinks" on the clicked sublink
-                    this.classList.toggle('show-subbuttonlinks');
-                });
-            });
-
-            var mainLinks = document.querySelectorAll('.main-link');
-
-            // Add click event listener to each main link
-            mainLinks.forEach(function(link) {
-                link.addEventListener('click', function() {
-                    // Toggle the class "show-sublinks" on the clicked main link
-                    this.classList.toggle('show-sublinks');
-
-                    // Find the sublink under the clicked main link and toggle its visibility
-                    var sublink = this.querySelector('.sublink');
-                    if (sublink) {
-                        sublink.classList.toggle('show-sublinks');
-                    }
-                });
-            });
-        });
-    </script>
-
     <script src="script.js"></script>
-    <script src="navbar.js"></script>
-    <script src="onclick.js"></script>
 </body>
 </html>
