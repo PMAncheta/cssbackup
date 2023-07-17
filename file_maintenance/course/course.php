@@ -35,138 +35,39 @@ if(!isset($_SESSION['user_name'])){
             <span class="logo_name">CIS</span>
         </div>
 
-    <div class="side">
-        <div class="menu-items">
-            <div class="nav-links">
-                <a href="/loginv1ghub/user_panel.php">
-                    <i class="uil uil-estate"></i>
-                    <span class="link-name">Dashboard</span>
-                </a>
-            </div>
-            
-            <div class="nav-links">
-                <a class="sub-btn">
+        <div class="sue">
+            <ul>
+                <li class="main-link">
+                    <a href="/cssbackup/user_panel.php" class="link-text">
+                        <i class="uil uil-estate"></i>Dashboard</a>
+                </li>
+                <li class="main-link">
                     <i class="uil uil-folder"></i>
                     File Maintenance
-                    <i class="uil uil-angle-right dropdown"></i>
-                </a>
-                <div class="sub-menu">
-                    <li>
-                        <a href="cadet.html" class="link-name">Cadet</a>
-                        <a href="/loginv1ghub/file_maintenance/faculty/faculty.php" class="link-name">Faculty</a>
-                        <a href="/loginv1ghub/file_maintenance/department/department.php" class="link-name">Department</a>
-                        <a href="/loginv1ghub/file_maintenance/course/course.php" class="link-name">Courses</a>
-                    </li>
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a class="sub-btn">
-                    <i class="uil uil-process"></i>
-                    Initial Term Processing
-                    <i class="uil uil-angle-right dropdown"></i>
-                </a>
-                <div class="sub-menu">
-                    <div class="nav-links">
-                        <a class="sub-btn">
-                            <i class="uil uil-gear">
-                                Term Settings
-                            </i>
-                            <i class="uil uil-angle-right dropdown"></i>
-                        </a>
-                        <div class="sub-menu">
-                            <li>
-                                <a href="cadet.html" class="link-name">ACAD</a>
-                                <a href="faculty.html" class="link-name">Tactics</a>
-                                <a href="department.html" class="link-name">Conduct</a>
-                                <a href="courses.html" class="link-name">Aptitude</a>
-                            </li>
-                        </div>
-                    </div>
-                    <li>
-                        <a href="#" class="link-name">Course Offerings</a>
-                        <a href="#" class="link-name">Sectioning</a>
-                    </li>
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a class="sub-btn">
-                    <i class="uil uil-folder"></i>
-                    Term Processing
-                    <i class="uil uil-angle-right dropdown"></i>
-                </a>
-                <div class="sub-menu">
-                    <li>
-                        <a href="faculty.html" class="link-name">ACAD Grades Entry</a>
-                        <a href="department.html" class="link-name">Conduct</a>
-                        <a href="courses.html" class="link-name">Aptitude</a>
-                        <a href="courses.html" class="link-name">SPDO</a>
-                        <a href="courses.html" class="link-name">Report</a>
-                        <a href="cadet.html" class="link-name">Scheduling</a>
-                    </li>
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a class="sub-btn">
-                    <i class="uil uil-folder"></i>
-                    Evaluation
-                    <i class="uil uil-angle-right dropdown"></i>
-                </a>
-                <div class="sub-menu">
-                    <li>
-                        <a href="faculty.html" class="link-name">Course</a>
-                        <a href="cadet.html" class="link-name">Faculty</a>
-                    </li>
-                </div>
-            </div>
-
-            <div class="nav-links">
-                <a class="sub-btn">
-                    <i class="uil uil-process"></i>
-                    End Term Processing
-                    <i class="uil uil-angle-right dropdown"></i>
-                </a>
-                <div class="sub-menu">
-                    <a href="#" class="link-name">Reports</a>
-                    <div class="nav-links">
-                        <a class="sub-btn">
-                            <i class="uil uil-gear">
-                                Awards
-                            </i>
-                            <i class="uil uil-angle-right dropdown"></i>
-                        </a>
-                    
-                        <div class="sub-menu">
-                            <li>
-                                <a href="faculty.html" class="link-name">Comm's List</a>
-                                <a href="cadet.html" class="link-name">Dean's List</a>
-                            </li>
-                        </div>
-                        <div class="">
-                            <a class="sub-btn">
-                                <i class="uil uil-gear">
-                                    Graduation Reports
-                                </i>
-                                <i class="uil uil-angle-right dropdown"></i>
-                            </a>
-                        
-                            <div class="sub-menu">
-                                <li>
-                                    <a href="faculty.html" class="link-name">Latin Awards</a>
-                                    <a href="cadet.html" class="link-name">Awards</a>
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                
-            
-            
+                    <i class="uil uil-arrow-right rotate"></i>
+                    <ul class="sublink"></li>
+                        <li><a href="cadets.php">Cadets</a></li>
+                        <li><a href="file_maintenance/department/department.php">Department</a></li>
+                        <li><a href="faculty.php">Faculty</a></li>
+                        <li><a href="/course/course.php">Course</a></li>
+                    </ul>
+                </li>
+                <li class="main-link">
+                    <i class="uil uil-facebook"></i>
+                    Main Link 2
+                    <ul class="sublink">
+                        <li>Sublink 1
+                            <ul class="subbuttonlink">
+                                <li>Subbuttonlink 1</li>
+                                <li>Subbuttonlink 2</li>
+                                <li>Subbuttonlink 3</li>
+                            </ul>
+                        </li>
+                        <li>Sublink 2</li>
+                        <li>Sublink 3</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -229,7 +130,7 @@ if(!isset($_SESSION['user_name'])){
         <div class="card">
             <div class="card-header">
                 <h4>
-                    <i class="uil uil-clock-three"></i>
+                    <i class="uil uil-briefcase-alt deplogo"></i>
                     <span class="text">Course</span>
                     <a href="course-create.php" class="btn btn-primary float-end">Add Course</a>
                 </h4>
@@ -239,20 +140,21 @@ if(!isset($_SESSION['user_name'])){
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th>CCODE</th>
-                            <th>CEQUI</th>
-                            <th>CNAME</th>
-                            <th>CDESC</th>
-                            <th>CUNITS</th>
-                            <th>CTYPE</th>
-                            <th>CADD</th>
-                            <th>CADD2</th>
-                            <th>CTYPEOLD</th>
+                            <th class = "td">CCODE</th>
+                            <th class = "td">CEQUI</th>
+                            <th class = "td">CNAME</th>
+                            <th class = "td">CDESC</th>
+                            <th class = "td">CUNITS</th>
+                            <th class = "td">CTYPE</th>
+                            <th class = "td">CADD</th>
+                            <th class = "td">CADD2</th>
+                            <th class = "td">CTYPEOLD</th>
+                            <th class = "td"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php 
-                            $query = "SELECT * FROM course";
+                            $query = "SELECT * FROM courses";
                             $query_run = mysqli_query($conn, $query);
 
                             if(mysqli_num_rows($query_run) > 0)
@@ -274,7 +176,7 @@ if(!isset($_SESSION['user_name'])){
                                             <a href="course-view.php?course_id=<?= $course['course_id']; ?>" class="btn btn-info btn-sm">View</a>
                                             <a href="course-edit.php?course_id=<?= $course['course_id']; ?>" class="btn btn-success btn-sm">Edit</a>
                                             <form action="course.php" method="POST" class="d-inline">
-                                                <button type="submit" name="delete_student" value="<?=$course['course_id'];?>" class="btn btn-danger btn-sm">Delete</button>
+                                                <button type="submit" name="delete_student" value="<?=$course['course_id'];?>" class="btn btn-danger btn-sm">Withdraw</button>
                                             </form>
                                         </td>
                                     </tr>
@@ -294,7 +196,6 @@ if(!isset($_SESSION['user_name'])){
         </div>
     </div>
 </div>
-</div>
 
 
 
@@ -305,7 +206,5 @@ if(!isset($_SESSION['user_name'])){
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="navbar.js"></script>
-    <script src="onclick.js"></script>
 </body>
 </html>

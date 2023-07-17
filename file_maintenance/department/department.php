@@ -45,9 +45,9 @@ if(!isset($_SESSION['user_name'])){
                     File Maintenance
                     <i class="uil uil-arrow-right rotate"></i>
                     <ul class="sublink"></li>
-                        <li><a href="file_maintenance/cadets/cadets.php">Cadets</a></li>
-                        <li><a href="file_maintenance/department/department.php">Department</a></li>
-                        <li><a href="/cssbackup/file_maintenance/faculty/faculty.php">Faculty</a></li>
+                        <li><a href="cadets.php">Cadets</a></li>
+                        <li><a href="department.php">Department</a></li>
+                        <li><a href="faculty.php">Faculty</a></li>
                         <li><a href="file_maintenance/course/course.php">Course</a></li>
                     </ul>
                 </li>

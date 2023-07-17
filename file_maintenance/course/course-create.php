@@ -13,7 +13,7 @@ require 'dbcon.php';
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Student Create</title>
+    <title>Create Course</title>
 </head>
 <body>
   
@@ -25,7 +25,7 @@ require 'dbcon.php';
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Student Add 
+                        <h4>Add Course 
                             <a href="course.php" class="btn btn-danger float-end">BACK</a>
                         </h4>
                     </div>
@@ -76,7 +76,7 @@ require 'dbcon.php';
                             </div>
                             
                             <div class="mb-3">
-                                <button type="submit" name="save_student" class="btn btn-primary" value="submit">Save Student</button>
+                                <button type="submit" name="save_student" class="btn btn-primary" value="submit">Save Course</button>
                             </div>
 
                         </form>

@@ -35,7 +35,7 @@ require 'dbcon.php';
                         if(isset($_GET['course_id']))
                         {
                             $course_id = mysqli_real_escape_string($conn, $_GET['course_id']);
-                            $query = "SELECT * FROM course WHERE course_id='$course_id' ";
+                            $query = "SELECT * FROM courses WHERE course_id='$course_id' ";
                             $query_run = mysqli_query($conn, $query);
 
                             if(mysqli_num_rows($query_run) > 0)

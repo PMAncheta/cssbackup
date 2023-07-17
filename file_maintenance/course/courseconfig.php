@@ -7,7 +7,7 @@ if(isset($_POST['delete_student']))
 {
     $student_id = mysqli_real_escape_string($conn, $_POST['delete_student']);
 
-    $query = "DELETE FROM course WHERE id='$student_id' ";
+    $query = "DELETE FROM courses WHERE id='$student_id' ";
     $query_run = mysqli_query($conn, $query);
 
     if (mysqli_query($conn, $query)){
@@ -35,7 +35,7 @@ if(isset($_REQUEST['update_student']))
     $ctypeold = mysqli_real_escape_string($conn, $_REQUEST['ctypeold']);
 
 
-    $query = "UPDATE course SET ccode='$ccode', cequi='$cequi', cname='$cname',
+    $query = "UPDATE courses SET ccode='$ccode', cequi='$cequi', cname='$cname',
      cdesc='$cdesc', cunits='$cunits', ctype='$ctype', 
       cadd='$cadd', cadd2='$cadd2', ctypeold='$ctypeold' WHERE course_id='$course_id' ";
     $query_run = mysqli_query($conn, $query);
@@ -66,7 +66,7 @@ if(isset($_POST['save_student']))
     $cadd2 = mysqli_real_escape_string($conn, $_POST['cadd2']);
     $ctypeold = mysqli_real_escape_string($conn, $_POST['ctypeold']);
 
-    $query = "INSERT INTO course (ccode,cequi,cname,cdesc,cunits,ctype,cadd,cadd2,ctypeold) 
+    $query = "INSERT INTO courses (ccode,cequi,cname,cdesc,cunits,ctype,cadd,cadd2,ctypeold) 
     VALUES ('$ccode','$cequi','$cname','$cdesc','$cunits','$ctype','$cadd','$cadd2','$ctypeold')";
     
     if (mysqli_query($conn, $query)){
